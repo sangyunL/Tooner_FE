@@ -1,0 +1,108 @@
+<!DOCTYPE>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" rel="stylesheet" href="../Css/Main.css">
+    <title> Main Page </title>
+  </head>
+  <body>
+    <!--상단 네비게이션 바-->
+    <nav class="navbar">
+      <div class="navbar_logo">
+          <a href="/Html/Main.html"><img src="../toon.png" alt=""></a>
+      </div>
+
+      <ul class="navbar_menu">
+        <li><a href="#">자유게시판</a></li>
+        <li><a href="../Html/Review.html">웹툰리뷰</a></li>
+        <li><a href="../Html/Mypage.html">마이페이지</a></li>
+      </ul>
+
+      <ul class="navbar_search">
+          <li>
+            <a href=""><input type="text" placeholder="검색어 입력">
+              <button type="button" onclick="find()">검색</button>
+            </a>
+        </li>
+          <li><a href=""><button>로그인</button></a></li>
+          <li><a href=""><button>회원가입</button></a></li>
+      </ul>
+
+      <!-- <a href="#" class="navbar_toogleBtn"></a>
+      <i class="fas fa-bars"></i> -->
+  </nav>
+  <hr width="100%" color="gray">
+    <br>
+
+    <div id="nav">
+      <h3>BEST REVIEW</h3>
+      <table class="container">
+        <tr>
+          <th width="100px" height="100px"></th>
+          <th width="100px" height="100px">제목</th>
+          <th width="100px" height="100px">작성자</th>
+        </tr>
+        <tr>
+          <td width="100px" height="100px"></td>
+          <td width="100px" height="100px">패션왕</td>
+          <td width="100px" height="100px">기안84</td>
+        </tr>
+        <tr>
+          <td width="100px" height="100px"></td>
+          <td width="100px" height="100px">맘마미안</td>
+          <td width="100px" height="100px">미티/구구</td>
+        </tr>
+        <tr>
+          <td width="100px" height="100px"></td>
+          <td width="100px" height="100px">외모지상주의</td>
+          <td width="100px" height="100px">박태준</td>
+        </tr>
+        <tr>
+          <td width="100px" height="100px"></td>
+          <td width="100px" height="100px">바른연애 길잡이</td>
+          <td width="100px" height="100px">남수</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="content">
+      <div>
+      <h3>추천 웹툰</h3>
+      <table>
+        <ol>
+          <li><img src="../APPLE.png" alt="APPLE" width="100px" height="100px"> 제목</li>
+          <li><img src="../APPLE.png" alt="APPLE" width="100px" height="100px"> 제목</li>
+        </ol>
+      </table>
+      </div>
+      <hr width="100%" color="black">
+      <div>
+        <h3>추천 웹툰</h3>
+        <table>
+          <ol>
+            <li><img src="../APPLE.png" alt="APPLE" width="100px" height="100px"> 제목</li>
+            <li><img src="../APPLE.png" alt="APPLE" width="100px" height="100px"> 제목</li>
+          </ol>
+        </table>
+      </div>
+    </div>
+
+    <div id="footer">
+      <h3>조회 수 순위</h3>
+      <span>
+        <img src="../APPLE.png" alt="APPLE" width="100px" height="100px">
+      </span>
+      &nbsp&nbsp&nbs
+      <span>
+        <img src="../APPLE.png" alt="APPLE" width="100px" height="100px">
+      </span>
+    </div>
+
+
+    <script>
+      function find(){
+        alert(document.getElementsByID('finding').value);
+      }
+    </script>
+  </body>
+</html>

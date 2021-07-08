@@ -1,0 +1,28 @@
+#header{
+  width:100%;
+  height:12%;
+}
+#nav{
+  text-align: center;
+  width:20%;
+  height:65%;
+  float:left;
+  border-right:6px solid black;
+}
+
+
+#footer{
+  width:100%;
+  height:15%;
+  clear:both;
+}
+
+.box{
+  display: table;
+  text-align: center;
+  width: 400px;
+  height: 350px;
+  background: rgb(180, 225, 244);
+  border-radius: 80px;
+  margin: 100px auto;
+}
