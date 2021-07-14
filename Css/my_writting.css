@@ -112,6 +112,12 @@ a {
   line-height: 30px;
 }
 
+.nav_review li {
+  padding: 20px;
+}
+.nav_review li:hover {
+  font-weight: bold;
+}
 .category {
   text-align: center;
   padding: 10px 20px 0 10px;
@@ -125,17 +131,4 @@ a {
 }
 .category li:hover {
   font-weight: bold;
-}
-.info{
-
-}
-
-br{
-  height: 100px; 
-}
-
-#image{
-  float:right;
-  text-align: center;
-  border-radius: 50%;
 }

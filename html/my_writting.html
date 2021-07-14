@@ -1,32 +1,57 @@
 <!DOCTYPE>
 <html lang="ko">
 
-  <head>
-    <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="../Css/my_info.css">
-    <title> My page </title>
-  </head>
-  <body>
-    <div id="header">
-      <a href="main.html"><img src="../toon.png" width="100px" height="100px"></a>
-      <a href="notice_board.html"><span style="display:inline-block; width:120px"><strong>자유게시판</strong></span></a>
-      <a href="Review.html"><span style="display:inline-block; width:120px"><strong>웹툰리뷰</strong></span></a>
-      <a href="mypage.html"><span style="display:inline-block; width:120px"><strong>마이페이지</strong></span></a>
-      <span style="display:inline-block; width:200px"><strong>검색</strong></span>
-      <span>
-        <input type="text" placeholder="검색어 입력">
-        <button>검색</button>
-      </span>
-      <a href="signin.html"><span style="display:inline-block; width:120px"><strong>Sign In</strong></span></a>
-      <a href="signup.html"><span style="display:inline-block; width:120px"><strong>Sign Up</strong></span></a>
-    </div>
-    <hr width="100%" color="black">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="../Css/notice_board.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <title> My_Writting </title>
+  <script src="https://kit.fontawesome.com/96bcc038d1.js" crossorigin="anonymous"></script>
+</head>
 
-    <div id="nav">
-      <div id="n1"> <strong text-align:center;><br> MY PAGE <br></strong></div>
-      <div> <a href="my_info.html"> 내 정보 </a></div>
-      <div> <a href="">내가 쓴 글 </a></div>
+<body>
+  <!--상단 네비게이션 바-->
+  <nav class="navbar">
+    <div class="navbar_logo">
+      <a href="Main.html"><img src="../toon.png" alt=""></a>
     </div>
+
+    <ul class="navbar_menu">
+      <li><a href="notice_board.html">자유게시판</a></li>
+      <li><a href="Review.html">웹툰리뷰</a></li>
+      <li><a href="Mypage.html">마이페이지</a></li>
+      <li><a href="#">검색</a></li>
+    </ul>
+
+    <ul class="navbar_search">
+      <li><form action="">
+        <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
+        <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
+      </form></li>
+    </ul>
+
+    <ul class="Sign_btn">
+      <li><a href="../Html/Signin.html"><button id="s_in">Sign In</button></a></li>
+      <li><a href="../Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>
+    </ul>
+
+  </nav>
+
+  <!--사이드바-->
+  <nav class="side_navbar">
+    <div id="review_title">
+      <p> MY PAGE </p>
+    </div>
+    <hr width="85%" color="gray">
+    <ul class="category">
+      <li><a href="my_info.html"> 내 정보 </a></li>
+      <li><a href="My_Writting.html"> 내가 쓴 글 </a></li>
+    </ul>
+  </nav>
 
   </body>
 </html>
