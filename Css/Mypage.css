@@ -102,7 +102,7 @@ a {
   float: left;
   display: flex;
   background-color: var(--bright-color);
-  width: 15%;
+  width: 300px;
   height: 100%;
   flex-direction: column;
 }
@@ -122,6 +122,7 @@ a {
 }
 .category li {
   padding: 20px;
+  text-align: center;
 }
 .category li:hover {
   font-weight: bold;
