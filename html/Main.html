@@ -1,109 +1,180 @@
-<!DOCTYPE>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8">
-    <link type="text/css" rel="stylesheet" href="../Css/Main.css">
-    <title> Main Page </title>
-  </head>
-  <body>
-    <!--상단 네비게이션 바-->
-    <nav class="navbar">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="/Css/Main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Main</title>
+    <script src="https://kit.fontawesome.com/96bcc038d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--내용-->
+<!--상단 네비게이션 바-->
+  <nav class="navbar">
+    <div class="navbar_content">
       <div class="navbar_logo">
-          <a href="Main.html"><img src="../toon.png" alt=""></a>
+          <a href="/Html/Main.html"><img src="/images/tooner_logo.png" alt=""></a>
       </div>
-
+        
       <ul class="navbar_menu">
-        <li><a href="notice_board.html">자유게시판</a></li>
-        <li><a href="Review.html">웹툰리뷰</a></li>
-        <li><a href="Mypage.html">마이페이지</a></li>
-        <li><a href="#">검색</a></li>
+          <li><a href="/Html/Freeboard.html">자유게시판</a></li>
+          <li><a href="/Html/Review.html">웹툰리뷰</a></li>
+          <li><a href="/Html/Mypage.html">마이페이지</a></li>
+          <li><a href="#">검색</a></li>
       </ul>
 
       <ul class="navbar_search">
-          <li>
-            <a href=""><input type="text" placeholder="검색어 입력">
-              <button type="button" onclick="find()">검색</button>
-            </a>
-        </li>
-          <li><a href=""><button>로그인</button></a></li>
-          <li><a href=""><button>회원가입</button></a></li>
+          <li><form action="">
+              <input id="search_box" type="text" name="search" placeholder="  내용을 입력해 주세요">
+              <button id="search_btn" type="submit"><i class="fas fa-search"></i></a></button>
+          </form></li>
       </ul>
 
-      <!-- <a href="#" class="navbar_toogleBtn"></a>
-      <i class="fas fa-bars"></i> -->
+      <ul class="Sign_btn">
+          <li><a href="/Html/Signin.html"><button id="s_in">Sign In</button></a></li>
+          <li><a href="/Html/Signup.html"><button id="s_up" >Sign Up</button></a></li>        
+      </ul>
+  </div>
   </nav>
-  <hr width="100%" color="gray">
-    <br>
-
-    <div id="nav">
-      <h3>BEST REVIEW</h3>
-      <table class="container">
-        <tr>
-          <th></th>
-          <th>제목</th>
-          <th>작성자</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td>패션왕</td>
-          <td>기안84</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>맘마미안</td>
-          <td>미티/구구</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>외모지상주의</td>
-          <td>박태준</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>바른연애 길잡이</td>
-          <td>남수</td>
-        </tr>
-      </table>
-    </div>
-
-    <div id="content">
-      <div>
-      <h3>추천 웹툰</h3>
-      <table>
-        <ol>
-          <li><img src="../APPLE.png" alt="APPLE" width="100px" height="100px"> 제목</li>
-          <li><img src="../APPLE.png" alt="APPLE" width="100px" height="100px"> 제목</li>
-        </ol>
-      </table>
+<!--내용-->
+  <div class="content">
+    <div class="left_content">
+      <div class="best_review">
+        <div class="best_r_title">
+          <h3>Best 리뷰</h3>
+        </div>
+        <div class="best_table">
+          <table>
+            <tr class="table_title">
+              <th colspan="2" >제목</th>
+              <th class="writer">작성자</th>
+            </tr>
+            <tr>
+              <td class="bestimg"><img src="/images/낮에 뜨는 달.jpg" width="30px" height="30px" alt=""></td>
+              <td class="table_wtitle">리뷰 제목이 들어갈 곳</td>
+              <td class="table_writer">작성자</td>
+            </tr>
+            <tr>
+              <td class="bestimg"><img src="/images/로베스의 완전감각.jpg" width="30px" height="30px" alt=""></td>
+              <td class="table_wtitle">리뷰 제목이 들어갈 곳</td>
+              <td class="table_writer">작성자</td>
+            </tr>
+            <tr>
+              <td class="bestimg"><img src="/images/부활남.jpg" width="30px" height="30px" alt=""></td>
+              <td class="table_wtitle">리뷰 제목이 들어갈 곳</td>
+              <td class="table_writer">작성자</td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <hr width="100%" color="black">
-      <div>
+      <div class="rank">
+        <div class="rank_title">
+          <h3>조회수 순위</h3>
+        </div>
+        <div class="ranks">
+          <ul class="ranks_contents">
+            <li class="ranks_li">
+              <div class="ranks_img"><img src="/images/가령의 정체불명 이야기.jpg" alt="리뷰썸네일">
+              </div>
+              <div class="rtitle">글제목</div>
+            </li>
+            <li class="ranks_li">
+              <div class="ranks_img"><img src="/images/같은 학교 친구.jpg" alt="리뷰썸네일">
+              </div>
+              <div class="rtitle">글제목</div>
+            </li>
+            <li class="ranks_li">
+              <div class="ranks_img"><img src="/images/나의 첫번째 새벽.jpg" alt="리뷰썸네일">
+              </div>
+              <div class="rtitle">글제목</div>
+            </li>
+            <li class="ranks_li">
+              <div class="ranks_img"><img src="/images/신의 탑.jpg" alt="리뷰썸네일">
+              </div>
+              <div class="rtitle">글제목</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="recommend">
+      <div class="recommend_title">
         <h3>추천 웹툰</h3>
-        <table>
-          <ol>
-            <li><img src="../APPLE.png" alt="APPLE" width="100px" height="100px"> 제목</li>
-            <li><img src="../APPLE.png" alt="APPLE" width="100px" height="100px"> 제목</li>
-          </ol>
+      </div>
+      <div class="recommend_table">
+        <table class="recommend_webtoon_table">
+          <tr>
+            <th scope="col" class="tno">No.</th>
+            <th class="ttitle">Title</th>
+            <th class="twrite">Writer</th>
+            <th class="tdate">Date</th>
+            <th class="tread">Read</th>
+          </tr>
+          <tr>
+            <td scope="col">1</td>
+            <td class="left">제목이 들어갈 자리입니다.</td>
+            <td>admin</td>
+            <td>2020.10.12</td>
+            <td>Read</td>
+          </tr>
+          <tr>
+            <td scope="col">2</td>
+            <td class="left">사용자가 쓴 글의 제목입니다 </td>
+            <td>Host</td>
+            <td>2020.10.12</td>
+            <td>Read</td>
+          </tr>
+          <tr>
+            <td scope="col">3</td>
+            <td class="left"> 글쓴이의 자유로운 글</td>
+            <td>Host</td>
+            <td>2020.10.12</td>
+            <td>Read</td>
+          </tr>
         </table>
       </div>
     </div>
-
-    <div id="footer">
-      <h3>조회 수 순위</h3>
-      <span>
-        <img src="../APPLE.png" alt="APPLE" width="100px" height="100px">
-      </span>
-      &nbsp&nbsp&nbs
-      <span>
-        <img src="../APPLE.png" alt="APPLE" width="100px" height="100px">
-      </span>
+    <div class="news">
+      <div class="news_title">
+        <h3>최신글</h3>
+      </div>
+      <div class="news_write">
+        <table class="news_table">
+          <tr>
+            <th scope="col" class="tno">No.</th>
+            <th class="ttitle">Title</th>
+            <th class="twrite">Writer</th>
+            <th class="tdate">Date</th>
+            <th class="tread">Read</th>
+          </tr>
+          <tr>
+            <td scope="col">1</td>
+            <td class="left">제목이 들어갈 자리입니다.</td>
+            <td>admin</td>
+            <td>2020.10.12</td>
+            <td>Read</td>
+          </tr>
+          <tr>
+            <td scope="col">2</td>
+            <td class="left">사용자가 쓴 글의 제목입니다 </td>
+            <td>Host</td>
+            <td>2020.10.12</td>
+            <td>Read</td>
+          </tr>
+          <tr>
+            <td scope="col">3</td>
+            <td class="left"> 글쓴이의 자유로운 글</td>
+            <td>Host</td>
+            <td>2020.10.12</td>
+            <td>Read</td>
+          </tr>
+        </table>
+      </div>
     </div>
-
-
-    <script>
-      function find(){
-        alert(document.getElementsByID('finding').value);
-      }
-    </script>
+  </div>
   </body>
 </html>

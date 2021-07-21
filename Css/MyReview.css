@@ -1,0 +1,159 @@
+/* 상단 네비게이션 바  */
+:root {
+  --main-color: rgb(180, 225, 244);
+  --bright-color: rgba(204, 236, 250, 0.59);
+  --back-color: #f6f6f6;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nanum Gothic", sans-serif;
+  background-color: var(--back-color);
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+#s_in {
+  height: 30px;
+  width: 75px;
+  border: none white;
+  background-color: var(--bright-color);
+  border-radius: 5px;
+  cursor: pointer;
+}
+#s_up {
+  height: 30px;
+  width: 75px;
+  border: none white;
+  background-color: var(--main-color);
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.navbar {
+  width: 100%;
+  border-bottom: 2.5px solid gray;
+}
+
+.navbar_content {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: gray;*/
+  padding-right: 12px;
+  padding-bottom: 0;
+}
+.navbar_logo img {
+  padding-left: 10px;
+  width: 80px;
+}
+.navbar_menu {
+  margin: 0;
+  flex-shrink: 0;
+  display: flex;
+  list-style: none;
+  padding-top: 20px;
+}
+.navbar_menu li {
+  padding: 8px 20px;
+}
+.navbar_menu li:hover {
+  background-color: var(--main-color);
+  border-radius: 100px;
+}
+
+.navbar_search {
+  flex-shrink: 0;
+  display: flex;
+  list-style: none;
+  padding-left: 50px;
+}
+.navbar_search li {
+  padding: 8px 10px;
+}
+#search_btn {
+  background-color: var(--back-color);
+  border: none;
+}
+.Sign_btn {
+  flex-shrink: 0;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+.Sign_btn li {
+  padding: 8px 10px;
+}
+.fa-search {
+  padding-left: 10px;
+  font-size: 20px;
+  color: gray;
+}
+#search_box {
+  border-radius: 3px;
+  width: 250px;
+  height: 30px;
+  border: 1px solid gray;
+  background-color: white;
+}
+/*내용*/
+.content {
+  margin: 0 auto;
+  width: 1200px;
+  height: 89%;
+}
+/*사이드바*/
+.side_navbar {
+  height: 100%;
+  float: left;
+  display: flex;
+  background-color: var(--bright-color);
+  width: 250px;
+  flex-direction: column;
+}
+
+#review_title {
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.nav_review {
+  padding: 10px 20px 0 10px;
+  text-align: center;
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.nav_review li {
+  padding: 20px;
+}
+
+#mywrite {
+  font-weight: bold;
+}
+
+#info:hover {
+  font-weight: bold;
+}
+/*내가 쓴 글*/
+.review_content {
+  margin: 0;
+  padding: 0;
+  background-color: var(--back-color);
+  float: right;
+  width: 950px;
+}
+
+.myreview_title {
+  padding: 30px 0 0 30px;
+}
