@@ -106,6 +106,7 @@ a {
   height: 100%;
   flex-direction: column;
 }
+
 #review_title {
   text-align: center;
   font-size: 20px;
@@ -159,4 +160,50 @@ a {
 	.navbar_toogleBtn {
 		display: block;
 	}
+}
+
+
+/* article */
+/*회원 정보*/
+.content {
+  margin: 0;
+  padding: 0;
+  background-color: var(--back-color);
+  float: right;
+  width: 950px;
+}
+.mypage_title {
+  padding: 30px 0 0 30px;
+}
+.info_box {
+  margin: 40px 40px 0 80px;
+  height: 130px;
+  width: 800px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.myimage {
+  padding: 13px;
+  display: inline-block;
+  float: left;
+}
+.myid {
+  padding: 30px 0 15px 180px;
+}
+.nickname {
+  padding: 10px 0 15px 180px;
+}
+.change_info_box {
+  margin: 40px 40px 0 80px;
+  height: 130px;
+  width: 800px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+.change_nick {
+  padding: 10px 0 15px 180px;
+}
+.change_image {
+  padding: 10px 0 15px 180px;
 }
